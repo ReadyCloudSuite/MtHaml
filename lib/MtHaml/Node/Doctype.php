@@ -43,7 +43,7 @@ class Doctype extends NodeAbstract
 
     public function getDoctype($format)
     {
-        $lcid = strtolower($this->doctypeId);
+        $lcid = strtolower((string)$this->doctypeId);
 
         if ($lcid === 'xml') {
             if ('xhtml' !== $format) {
