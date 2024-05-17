@@ -71,9 +71,9 @@ class PhpRenderer extends RendererAbstract
 
             if ($node->getEscaping()->isEnabled()) {
                 if ($node->getEscaping()->isOnce()) {
-                    $fmt = "<?php echo htmlspecialchars(%s,ENT_QUOTES,'%s',false); ?>";
+                    $fmt = "<?php echo htmlspecialchars(strval(%s),ENT_QUOTES,'%s',false); ?>";
                 } else {
-                    $fmt = "<?php echo htmlspecialchars(%s,ENT_QUOTES,'%s'); ?>";
+                    $fmt = "<?php echo htmlspecialchars(strval(%s),ENT_QUOTES,'%s'); ?>";
                 }
             }
             $this->addDebugInfos($node);
