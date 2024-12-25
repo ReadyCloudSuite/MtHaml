@@ -30,7 +30,7 @@ class Run extends NestAbstract
         return 'exec';
     }
 
-    public function setMidblock(Run $midblock = null)
+    public function setMidblock(?Run $midblock = null)
     {
         $this->midblock = $midblock;
     }

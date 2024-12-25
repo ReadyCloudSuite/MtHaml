@@ -8,7 +8,7 @@ class Extension extends \Twig_Extension
 {
     private $mthaml;
 
-    public function __construct(Environment $mthaml = null)
+    public function __construct(?Environment $mthaml = null)
     {
         $this->mthaml = $mthaml;
     }

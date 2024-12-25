@@ -10,7 +10,7 @@ class Twig extends AbstractFilter
 {
     private $twig;
 
-    public function __construct(\Twig_Environment $twig = null)
+    public function __construct(?\Twig_Environment $twig = null)
     {
         $this->twig = $twig;
         if (null !== $twig && !function_exists('twig_template_from_string')) {

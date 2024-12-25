@@ -31,7 +31,7 @@ abstract class NodeAbstract
         return $this->position['column'];
     }
 
-    protected function setParent(NodeAbstract $parent = null)
+    protected function setParent(?NodeAbstract $parent = null)
     {
         $this->parent = $parent;
     }
@@ -50,7 +50,7 @@ abstract class NodeAbstract
 
     abstract public function accept(NodeVisitorInterface $visitor);
 
-    protected function setNextSibling(NodeAbstract $node = null)
+    protected function setNextSibling(?NodeAbstract $node = null)
     {
         $this->nextSibling = $node;
     }
@@ -60,7 +60,7 @@ abstract class NodeAbstract
         return $this->nextSibling;
     }
 
-    protected function setPreviousSibling(NodeAbstract $node = null)
+    protected function setPreviousSibling(?NodeAbstract $node = null)
     {
         $this->previousSibling = $node;
     }

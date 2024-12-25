@@ -4,7 +4,7 @@ namespace MtHaml\Tests;
 
 class TestCase extends \PHPUnit_Framework_TestCase
 {
-    public function assertException($parts, \Exception $e = null)
+    public function assertException($parts, ?\Exception $e = null)
     {
         if (empty($parts['EXCEPTION'])) {
             if (null !== $e) {

@@ -6,7 +6,7 @@ use MtHaml\NodeVisitor\NodeVisitorInterface;
 
 class TagAttributeList extends TagAttribute
 {
-    public function __construct(array $position, NodeAbstract $value = null)
+    public function __construct(array $position, ?NodeAbstract $value = null)
     {
         parent::__construct($position, null, $value);
     }

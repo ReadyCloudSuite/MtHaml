@@ -9,7 +9,7 @@ class TagAttribute extends NodeAbstract
     protected $name;
     protected $value;
 
-    public function __construct(array $position, NodeAbstract $name = null, NodeAbstract $value = null)
+    public function __construct(array $position, ?NodeAbstract $name = null, ?NodeAbstract $value = null)
     {
         parent::__construct($position);
         $this->name = $name;
